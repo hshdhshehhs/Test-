@@ -1,0 +1,249 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* General styles */
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	min-height: 100vh;
+	background-color: #f4f4f4;
+	color: #333;
+	line-height: 1.6;
+}
+
+.container {
+	max-width: 800px;
+	padding: 2rem;
+	background: #fff;
+	-webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	min-height: 80vh;
+}
+
+/* Header Styles */
+header {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+header h1 {
+	font-size: 2.5rem;
+	margin-bottom: 0.5rem;
+}
+
+/* Input Section Styles */
+.input-section {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	gap: 1rem;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin-bottom: 2rem;
+}
+
+.input-section label {
+	display: block;
+	margin-bottom: 0.5rem;
+}
+
+.input-section input[type="url"] {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	padding: 0.7rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 1rem;
+}
+
+.input-section button {
+	padding: 0.7rem 1.5rem;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	-webkit-transition: background-color 0.3s ease;
+	-o-transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;
+	font-size: 1rem;
+}
+
+.input-section button:hover {
+	background-color: #45a049;
+}
+
+/* Key Section Styles */
+.key-section {
+	margin-bottom: 2rem;
+	padding: 1rem;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+.key-section h2 {
+	margin-bottom: 1rem;
+}
+
+.key-section label {
+	display: block;
+	margin-bottom: 0.5rem;
+}
+
+.key-section input[type="text"] {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	padding: 0.7rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+
+#apply-key-button {
+	padding: 0.7rem 1.5rem;
+	background-color: #3498db;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	-webkit-transition: background-color 0.3s ease;
+	-o-transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;
+	font-size: 1rem;
+	display: none;
+}
+
+#apply-key-button:hover {
+	background-color: #2980b9;
+}
+
+#key-status {
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+#copy-key-button {
+	padding: 0.7rem 1.5rem;
+	background-color: #3498db;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	-webkit-transition: background-color 0.3s ease;
+	-o-transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;
+	font-size: 1rem;
+	display: none;
+}
+
+#copy-key-button:hover {
+	background-color: #2980b9;
+}
+
+/* Supported Sites Styles */
+#supported-sites {
+	margin-bottom: 2rem;
+}
+
+#supported-sites ul {
+	list-style: none;
+	padding: 0;
+	display: -ms-grid;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 1rem;
+}
+
+#supported-sites li {
+	background-color: #eaeaea;
+	padding: 1rem;
+	border-radius: 4px;
+	text-align: center;
+	-webkit-transition: background-color 0.3s ease;
+	-o-transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;
+}
+
+#supported-sites li:hover {
+	background-color: #d5d5d5;
+}
+
+/* Footer styles */
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 1rem 0;
+	margin-top: auto;
+}
+
+/* Message box */
+.message {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	padding: 1rem;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	border-radius: 5px;
+	z-index: 9999;
+	-webkit-animation: slideIn 0.5s forwards;
+	        animation: slideIn 0.5s forwards;
+}
+
+.message.hidden {
+	display: none;
+}
+
+@-webkit-keyframes slideIn {
+	from {
+		-webkit-transform: translateY(-50px);
+		        transform: translateY(-50px);
+		opacity: 0;
+	}
+
+	to {
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slideIn {
+	from {
+		-webkit-transform: translateY(-50px);
+		        transform: translateY(-50px);
+		opacity: 0;
+	}
+
+	to {
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+		opacity: 1;
+	}
+}
