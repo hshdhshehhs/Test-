@@ -1,42 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlatoBypasser</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Bypass link shorteners, KeySystems, and general link protections.">
-    <meta name="keywords" content="bypass, links, shorteners, KeySystem, linkvertise, platoboost">
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <h1>PlatoBypasser</h1>
-        <p>Bypass various link protections effortlessly.</p>
-      </header>
-      <main>
-        <section class="input-section">
-          <label for="url-input">URL to Bypass:</label>
-          <input type="url" id="url-input" placeholder="Enter URL" required="">
-          <button id="bypass-button">Bypass</button>
-        </section>
-        <section class="key-section">
-          <h2>Key Handling</h2>
-          <label for="key-input">Key (Optional):</label>
-          <input type="text" id="key-input" placeholder="Enter Key (If required)">
-          <button id="apply-key-button" style="display:none;">Apply Key</button>
-          <p id="key-status"></p>
-          <button id="copy-key-button" style="display: none;">Copy Key</button>
-        </section>
-        <section id="supported-sites">
-          <h2>Supported Sites:</h2>
-        </section>
-      </main>
-      <footer>
-        <p>&copy; 2024 PlatoBypasser</p>
-      </footer>
-      <div id="message" class="message hidden"></div>
-    </div>
-    <script src="script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Link "Bypasser" (Simulation)</title>
+  <style>
+    .message {
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form id="bypass-form" onsubmit="return handleBypass(event)">
+      <label for="url-input">URL:</label>
+      <input type="text" id="url-input" placeholder="Enter URL" required>
+      <button type="submit">Bypass (Simulation)</button>
+    </form>
+    <div id="message" class="message hidden"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
